@@ -13,9 +13,7 @@ using namespace std;
  }
  else{
     cout<<"position already occupied"<<endl;
-    
     return false;
-    
  }
 }
  void print(char matrix[3][3]){
@@ -38,31 +36,19 @@ int main(){
     int val;
     char player1='X';
     char player2='O';
-    //player = (player == 'X') ? 'O' : 'X';
-    int count=0;
    
 char board[3][3]={
     {'1','2','3'},
     {'4','5','6'},
     {'7','8','9'},
 };
-while(count<9){
-    cout<<"playerX enter position :"<<endl;
+cout<<"playerX enter position :"<<endl;
 cin>>val;
 replaceValueOfposition( val,board,player1);
 print(board);
-count++;
 cout<<"playerY enter position :"<<endl;
 cin>>val;
 replaceValueOfposition( val,board,player2);
 print(board);
-count++;
 
 }
-
-
-}
-
-
-
-
